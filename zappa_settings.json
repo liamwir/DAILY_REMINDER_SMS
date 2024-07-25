@@ -3,13 +3,13 @@
         "app_function": "reminder_flask_app.app",
         "profile_name": "default",
         "project_name": "daily-reminder-",
-        "runtime": "python3.9",
+        "runtime": "python3.11",
         "s3_bucket": "zappa-reminder-flask-app",
-        "aws_region": "us-east-1",
         "keep_warm": false,
+        "aws_region": "us-east-1",
         "events": [{
-            "function": "main.credentials_refresh",
-            "expression": "rate(2 minutes)"
+            "function": "reminder_flask_app.credentials_refresh",
+            "expression": "rate(50 minutes)"
         }]
     }
 }
