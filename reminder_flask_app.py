@@ -102,7 +102,7 @@ def get_events_list():
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
-        all_events = all_events + f"<br>{start}: {event['summary']}"
+        all_events = all_events + f"\n* {start}: {event['summary']}"
     
     return all_events
 
