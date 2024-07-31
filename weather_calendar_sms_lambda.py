@@ -33,7 +33,7 @@ def get_weather_data() -> str:
         date_obj = datetime.fromisoformat(current_weather["startTime"]) #2022-05-31T06:00:00-04:00
         date = date_obj.strftime(DATE_FORMAT)
 
-        weather_data = f"Forecast for {date}: \n\n\t{forecast} \n\tTemperature: {temp}\N{DEGREE SIGN} \n\tWind Speed: {wind}"
+        weather_data = f"Forecast and Schedule for {date}: \n \n* {forecast} \n* Temperature: {temp}\N{DEGREE SIGN} \n* Wind Speed: {wind}"
         print(weather_data)
         return weather_data
 
