@@ -1,4 +1,5 @@
 from __future__ import print_function
+from datetime import datetime
 
 import datetime
 import time
@@ -103,9 +104,18 @@ def get_events_list():
         start = event['start'].get('dateTime', event['start'].get('date'))
         end = event['end'].get('dateTime', event['end'].get('date'))
         print(start, event['summary'])
-        all_events = all_events + f"\n* {start} - {end}: {event['summary']}"
+        all_events = all_events + f"\n* {format_time(start)} - {format_time(end)}: {event['summary']}"
     
     return all_events
+
+def format_time(datetime_str):
+    # Parse the datetime string to a datetime object
+    dt = datetime.fromisoformat(datetime_str)
+    
+    # Format the datetime object to just show the time in hours:minutes
+    formatted_time = dt.strftime('%-I:%M%p').lower()
+    
+    return formatted_time
 
 #[Credentials]------------------------------------------------------
 
