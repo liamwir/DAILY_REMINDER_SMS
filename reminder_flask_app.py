@@ -31,8 +31,8 @@ CALENDARS = {'Holidays in United States': 'en.usa#holiday@group.v.calendar.googl
 'Volunteer: NEB': 'ifc1tt3hhut0eri8t51bq32ntk@group.calendar.google.com',
 'Work: STEM Libraries GA': 'h2gh4teullsid40d5is24djitg@group.calendar.google.com',
 'WM Spring 2023 Season': '1fa07adc82633bb01cfee9eac7c9b8d8f04f7eb7ce3bd1a039dbd91783bcab72@group.calendar.google.com',
-'HCAMI Rehearsal Schedule - SP 23': '446518d3e8b2d1f78fb479116e33dcf968385f8c4925f3f7466773ace7a3d3f0@group.calendar.google.com',
-'Work: Martin J. Gottlieb and Laurie Preschool': 'b875f53d57aa711615c09a4e53b756b232a0ae96ec4252d958eb951b0e3e39b7@group.calendar.google.com'}
+'HCAMI Rehearsal Schedule - SP 23': '446518d3e8b2d1f78fb479116e33dcf968385f8c4925f3f7466773ace7a3d3f0@group.calendar.google.com'} #,
+#'Work: Martin J. Gottlieb and Laurie Preschool': 'b875f53d57aa711615c09a4e53b756b232a0ae96ec4252d958eb951b0e3e39b7@group.calendar.google.com'}
 
 app = Flask(__name__)
 
